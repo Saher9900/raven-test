@@ -491,7 +491,7 @@ main.pt-5 > .hero-glow:first-child h1 {
 .marquee-track {
     display: flex;
     gap: 4rem;
-    animation: marquee 35s linear infinite;
+    animation: marquee 15s linear infinite;
     white-space: nowrap;
 }
 
