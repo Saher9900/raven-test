@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven House — Luxury Sunglasses & Perfumes</title>
+    <meta name="description" content="Raven House — curated luxury sunglasses and signature fragrances.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-raven">
+
+    <nav id="site-header" class="navbar navbar-expand-lg navbar-dark fixed-top navbar-raven bg-raven py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 me-0" href="index.html">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 4L8 14v20l16 10 16-10V14L24 4z" stroke="url(#goldGrad)" stroke-width="1.5"/>
+                    <path d="M24 12c-6 4-10 10-10 16 0 4 3 8 10 12 7-4 10-8 10-12 0-6-4-12-10-16z" fill="url(#goldGrad)" opacity="0.9"/>
+                    <circle cx="24" cy="22" r="3" fill="#0a0a0a"/>
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f5d78e"/>
+                            <stop offset="50%" stop-color="#d4af37"/>
+                            <stop offset="100%" stop-color="#8b6914"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="font-display fs-4 fw-bold tracking-brand logo-gold mb-0">RAVEN HOUSE</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-raven" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+                <ul class="navbar-nav gap-lg-3" aria-label="Main navigation">
+                    <li class="nav-item"><a class="nav-link site-nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="perfumes.html">Perfumes</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="sunglasses.html">Sunglasses</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end offcanvas-raven text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header border-bottom border-raven">
+            <h5 class="offcanvas-title logo-gold font-display fw-bold" id="mobileMenuLabel">RAVEN HOUSE</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex align-items-center justify-content-center">
+            <ul class="nav flex-column text-center gap-3 w-100" aria-label="Mobile navigation">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfumes.html">Perfumes</a></li>
+                <li class="nav-item"><a class="nav-link" href="sunglasses.html">Sunglasses</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero-glow position-relative min-vh-hero d-flex align-items-center overflow-hidden pt-5">
+            <div class="position-absolute top-0 start-0 w-100 h-100 hero-pattern"></div>
+            <div class="container position-relative z-1 text-center py-5">
+                <p class="text-gold small text-uppercase fw-medium tracking-luxury mb-3">Luxury Redefined</p>
+                <h1 class="font-display display-3 fw-bold text-white lh-sm">
+                    See the World.<br>
+                    <span class="logo-gold">Smell the Moment.</span>
+                </h1>
+                <p class="mx-auto mt-4 col-lg-8 fs-5 text-muted-raven">
+                    Raven House unites artisan eyewear and signature fragrances — crafted for those who move through life with intention and style.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+                    <a href="sunglasses.html" class="btn btn-gold rounded-pill px-4 py-2">Explore Sunglasses</a>
+                    <a href="perfumes.html" class="btn btn-outline-gold rounded-pill px-4 py-2">Discover Perfumes</a>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-0 w-100 hero-fade-bottom"></div>
+        </section>
+
+        <section class="py-5 my-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="font-display display-5 fw-semibold text-white">Our Collections</h2>
+                    <p class="text-muted-raven mt-2">Two worlds of luxury, one house of distinction</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <a href="sunglasses.html" class="collection-card rounded-4 d-block text-decoration-none position-relative">
+                            <div class="card-visual bg-raven-surface d-flex align-items-center justify-content-center">
+                                <svg class="collection-icon" width="128" height="128" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+                                    <circle cx="12" cy="12" r="3" stroke-width="0.75"/>
+                                </svg>
+                            </div>
+                            <div class="position-absolute top-0 start-0 w-100 h-100 card-overlay"></div>
+                            <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                                <h3 class="font-display h2 fw-semibold text-white">Sunglasses</h3>
+                                <p class="text-muted-raven mb-2">Premium lenses. Timeless frames.</p>
+                                <span class="text-gold small fw-medium">Shop collection →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="perfumes.html" class="collection-card rounded-4 d-block text-decoration-none position-relative">
+                            <div class="card-visual bg-raven-surface d-flex align-items-center justify-content-center" style="background: linear-gradient(to bottom right, #27272a, rgba(69, 26, 3, 0.2), #09090b);">
+                                <svg class="collection-icon" width="112" height="112" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75" d="M12 2v4m0 12v4M8 6h8M7 10h10l-1 10H8L7 10z"/>
+                                </svg>
+                            </div>
+                            <div class="position-absolute top-0 start-0 w-100 h-100 card-overlay"></div>
+                            <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                                <h3 class="font-display h2 fw-semibold text-white">Perfumes</h3>
+                                <p class="text-muted-raven mb-2">Signature scents. Lasting impressions.</p>
+                                <span class="text-gold small fw-medium">Shop collection →</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-muted py-5">
+            <div class="container py-4">
+                <div class="row g-5">
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <div class="feature-badge rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto mx-lg-0">
+                            <span class="font-display fs-4 text-gold">01</span>
+                        </div>
+                        <h3 class="font-display h4 fw-semibold text-white">Curated Quality</h3>
+                        <p class="text-muted-raven mt-2">Every piece is hand-selected for craftsmanship and lasting appeal.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <div class="feature-badge rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto mx-lg-0">
+                            <span class="font-display fs-4 text-gold">02</span>
+                        </div>
+                        <h3 class="font-display h4 fw-semibold text-white">Timeless Design</h3>
+                        <p class="text-muted-raven mt-2">Classic silhouettes and notes that transcend seasons and trends.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <div class="feature-badge rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto mx-lg-0">
+                            <span class="font-display fs-4 text-gold">03</span>
+                        </div>
+                        <h3 class="font-display h4 fw-semibold text-white">Personal Service</h3>
+                        <p class="text-muted-raven mt-2">Expert guidance to find your perfect frame and fragrance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 my-5">
+            <div class="container col-lg-8 text-center">
+                <h2 class="font-display display-5 fw-semibold text-white">Begin Your Journey</h2>
+                <p class="text-muted-raven mt-3">Visit our boutique or reach out — we would love to help you discover your signature look and scent.</p>
+                <a href="contact.html" class="btn btn-gold rounded-pill px-5 py-2 mt-4">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-raven border-top border-raven bg-raven py-5">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+                <a href="index.html" class="font-display fs-5 fw-bold tracking-brand logo-gold text-decoration-none">RAVEN HOUSE</a>
+                <nav class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 small">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="perfumes.html">Perfumes</a>
+                    <a href="sunglasses.html">Sunglasses</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <p class="text-center text-secondary small mt-4 mb-0">&copy; 2026 Raven House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
