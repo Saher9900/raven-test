@@ -1,12 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("site-header");
     if (header) {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 40) {
-                header.classList.add("header-scrolled");
-            } else {
-                header.classList.remove("header-scrolled");
-            }
-        });
+        const onScroll = () => {
+            header.classList.toggle("header-scrolled", window.scrollY > 40);
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+    }
+
+    const revealEls = document.querySelectorAll(".reveal");
+    if (revealEls.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+    } else {
+        revealEls.forEach((el) => el.classList.add("is-visible"));
     }
 });
